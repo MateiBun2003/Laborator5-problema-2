@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 
 
-class Persoana {
+class Person {
     String prenume;
     String nume;
 
-    Persoana(String prenume, String nume) {
+    Person(String prenume, String nume) {
         this.prenume = prenume;
         this.nume = nume;
     }
@@ -15,7 +15,7 @@ class Persoana {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Persoana persoana = (Persoana) o;
+        Person persoana = (Person) o;
         return Objects.equals(prenume, persoana.prenume) &&
                 Objects.equals(nume, persoana.nume);
     }
